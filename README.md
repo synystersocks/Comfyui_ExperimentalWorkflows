@@ -42,7 +42,7 @@ note 1
 note 2
 (if swapping to a 13b/14b model, i would recomment the q8 gguf, maximise the quality of the weights "within limitations")
 note 3
-(for wan i2v 14b, frames should be set too = 81, and resolution to = 720px / 544px, Teacache coefficient = 0.15.) 
+(for wan i2v 14b (720p), frames should be set too = 81, and resolution to = 720px / 544px, Teacache coefficient = 0.15.) 
 the rest of the workflow will work fine "takes around 2 hours to process all 4 outputs"
 
 ------------------------------
