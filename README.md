@@ -7,7 +7,7 @@ Update 2 ---
 Added - ModelDtypeModder workflow,
 Added - bf16 version of skyreelv2i2v1.3b workflow,
 
-Additional - HuggingFace Model Uploads -
+Additional - HuggingFace Model Uploads (non-gguf) -
 
 SkyReels-V2-I2V-1.3B-540P-bf16 - 
 https://huggingface.co/SynysterSocks/SkyReels-V2-I2V-1.3B-540P-bf16
