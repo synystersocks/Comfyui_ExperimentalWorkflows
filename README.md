@@ -1,5 +1,19 @@
 # Comfyui_ExperimentalWorkflows
-This Repo contains experimental Comfyui workflows, please feel free to try and test these out :)
+This Repo contains experimental Comfyui workflows, please feel free to try and test these out.
+
+------------------------------
+Update 2 ---
+
+Added - ModelDtypeModder workflow,
+Added - bf16 version of skyreelv2i2v1.3b workflow,
+
+Additional - HuggingFace Model Uploads -
+
+SkyReels-V2-I2V-1.3B-540P-bf16 - 
+https://huggingface.co/SynysterSocks/SkyReels-V2-I2V-1.3B-540P-bf16
+
+Phantom-Wan-1_3B-bf16
+https://huggingface.co/SynysterSocks/Phantom-Wan-1_3B-bf16
 
 ------------------------------
 Update 1 ---
