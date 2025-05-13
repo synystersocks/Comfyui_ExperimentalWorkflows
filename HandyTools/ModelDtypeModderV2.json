@@ -1,0 +1,141 @@
+{
+  "id": "8fc840cd-fa9d-402e-93a2-20a3e02415a9",
+  "revision": 0,
+  "last_node_id": 12,
+  "last_link_id": 6,
+  "nodes": [
+    {
+      "id": 9,
+      "type": "UNETLoader",
+      "pos": [
+        -795.1087036132812,
+        -576.2928466796875
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            3
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.32",
+        "Node name for S&R": "UNETLoader"
+      },
+      "widgets_values": [
+        "SkyReels-V2-I2V-1.3B-540P-fp32.safetensors",
+        "default"
+      ]
+    },
+    {
+      "id": 1,
+      "type": "ModelComputeDtype",
+      "pos": [
+        -324.72882080078125,
+        -586.8666381835938
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            6
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.32",
+        "Node name for S&R": "ModelComputeDtype"
+      },
+      "widgets_values": [
+        "bf16"
+      ]
+    },
+    {
+      "id": 12,
+      "type": "ModelSaveKJ",
+      "pos": [
+        78.7275390625,
+        -595.5492553710938
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 6
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "bec42252c690c1b5b2064b5a6732ad11cc452759",
+        "Node name for S&R": "ModelSaveKJ"
+      },
+      "widgets_values": [
+        "diffusion_models/SkyReels-V2-I2V-1.3B-540P-bf16",
+        "model.diffusion_model."
+      ]
+    }
+  ],
+  "links": [
+    [
+      3,
+      9,
+      0,
+      1,
+      0,
+      "MODEL"
+    ],
+    [
+      6,
+      1,
+      0,
+      12,
+      0,
+      "MODEL"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "frontendVersion": "1.18.9",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
