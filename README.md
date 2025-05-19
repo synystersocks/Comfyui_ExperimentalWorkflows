@@ -2,6 +2,29 @@
 This Repo contains experimental Comfyui workflows, please feel free to try and test these out.
 
 ------------------------------
+Update 3 ---
+
+Added - Experimental Wan2.1i2v14b cross Skyreeli2v1.3b
+
+Efficient and effective model cross processing,
+This method processes the latent using wan for the first 33% of the generation and continues the remaining 66% with skyreel.
+
+this requires several custom nodes,
+
+ComfyUi-RescaleCFGAdvanced
+ComfyUI-WanVideoWrapper
+ComfyUI-VideoHelperSuite
+ComfyUI-KJNodes
+ComfyUI-GGUF
+Skimmed_CFG
+Teacache
+Sageattention
+
+can also be adapted further with,
+TWanSigmaSampler
+sigma-graph-node
+
+------------------------------
 Update 2 ---
 
 Added - ModelDtypeModder workflow,
